@@ -59,3 +59,47 @@ login
 
 end
 ```
+
+## Criptografar a senha caso necessário
+
+```
+service password-encryption
+```
+
+## Configurar uma senha para as conexões VTY (terminal virtual ou telnet)
+
+### Pré requisitos
+
+Primeiro precisa entrar no modo de configuração do terminal
+
+```
+enable
+
+conf t
+```
+
+### Para configurar nos roteadores
+
+```
+line vty 0 4
+
+password <SUA SENHA AQUI>
+
+login
+```
+
+### Para configurar nos switches
+
+```
+line vty 0 15
+
+password <SUA SENHA AQUI>
+
+login
+```
+
+## Salvando as configurações
+
+```
+copy running-config startup-config
+```

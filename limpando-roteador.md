@@ -1,4 +1,4 @@
-### Para limpar a configuração de um roteado
+### Para limpar a configuração de um roteador
 
 ```
 erase startup-config
